@@ -16,12 +16,21 @@
 <body>
     <div class="container-fluid bg-dark d-flex flex-column m-auto vh-100">
         <div class="d-flex m-auto flex-column text-center col-sm-12 col-xl-6">
-            <div>
+            <label type="text" class="text text-primary fw-bold fs-1 col-4 m-auto mb-3">LOGIN</label>
+            <div class="container d-flex justify-content-center flex-md-row">
                 <img class=" mb-5 img-fluid col-6" src="undraw_Shopping_Bags_yt78.png" alt="">
+                <div class="container d-flex justify-content-evenly flex-column">
+                    <input type="text" class="form-control form-control-lg" id="floatingInput" placeholder="E-mail:" />
+                    <input type="text" class="form-control form-control-lg" id="floatingInput"
+                        placeholder="Password:" />
+                </div>
             </div>
             <div class="d-flex">
-                <button type="button" class="btn btn-primary fw-bold fs-5 col-4 m-auto mb-3" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"> Usuário</button>
+                <label type="text" class="text text-primary fw-bold fs-5 col-4 m-auto mb-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><u>Cadastre-se</u></label>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-primary fw-bold fs-5 col-4 m-auto mb-3">LOGIN</button>
             </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -36,24 +45,48 @@
                     <div class="modal-body">
                         <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-html="true"
                             data-bs-placement="top" title="Digite seu E-mail particular.">
-                            <input type="email" class="form-control form-control-lg" id="floatingInput"
-                                placeholder="nome@exemplo.com" />
-                            <label for="floatingInput">Email:</label>
+                            <input type="text" class="form-control form-control-lg" id="floatingInput"
+                                placeholder="Digite seu nome" />
+                            <label for="floatingInput">Nome:</label>
                         </div>
                         <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Digite seu Primeiro Nome.">
+                            title="Digite seu número de celular">
                             <input type="text" class="form-control" id="floatingPassword" placeholder="Nome" />
-                            <label for="floatingPassword">Nome: </label>
-                        </div>
-                        <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Digite seu celular particular.">
-                            <input type="text" class="form-control" id="floatingPassword" placeholder="Celular" />
                             <label for="floatingPassword">Celular: </label>
                         </div>
                         <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Digite sua senha.">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" />
-                            <label for="floatingPassword">Senha:</label>
+                            title="Digite seu e-mail">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Celular" />
+                            <label for="floatingPassword">E-mail: </label>
+                        </div>
+                        <div class="input-group">
+                            <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Digite sua senha.">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Senha" />
+                                <label for="floatingPassword">Senha:</label>
+                            </div>
+                            <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Confirme sua senha.">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Senha" />
+                                <label for="floatingPassword">Confirmar Senha:</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Digite sua rua">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Senha" />
+                            <label for="floatingPassword">Rua:</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Digite seu bairro">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Senha" />
+                                <label for="floatingPassword">Bairro:</label>
+                            </div>
+                            <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Digite o número da sua casa">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Senha" />
+                                <label for="floatingPassword">N°:</label>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger fw-bold"
